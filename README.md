@@ -1,51 +1,109 @@
-# expense_tracker_system
-SPU Project Django this project is for education. 
-it about income and expenditure that i want to have something to write on 
-but lazy to buy the book one so it came to this idea
+# 💰 Expense Tracker System
 
-work with python-version: [3.10, 3.11, 3.12]
+A Django-based web application that helps users track and categorize their daily expenses. This system provides a clean and functional interface to log spending, monitor habits, and gain insights into financial activity.
 
-Install Git
-Go to the official Git website.
-Download the installer for Windows. Make sure to check the box that says "Add Git to PATH" during installation. or just hit all next :
+---
 
-```bash
-https://git-scm.com/downloads/win
- ```
+## 🚀 Features
 
-clone the repository to your local machine:
+- Add, edit, and delete expense entries
+- Categorize expenses (e.g., Food, Transport, Utilities)
+- View expenses filtered by date and category
+- Responsive web UI built with Django templates
+- Uses SQLite by default (easy to switch to PostgreSQL/MySQL)
+- Code linting with [Ruff](https://github.com/astral-sh/ruff)
+- Unit testing with Django’s built-in test framework
 
+---
+
+## 🛠 Tech Stack
+
+- **Language**: Python 3.12
+- **Framework**: Django
+- **Database**: SQLite
+- **Linting**: Ruff
+- **Testing**: Django test runner
+- **CI/CD**: GitHub Actions (optional)
+
+---
+
+## 📸 Web Example
+
+### Our Logo
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/brandicon.png)
+
+### 1. Home
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egHome.png)
+
+### 2. Filter Tab
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egFilter.png)
+
+### 3. Edit
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egEdit.png)
+
+### 4. Delete
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egDelete.png)
+
+### 5. Add
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egAdd.png)
+
+### 6. Search
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egSearch.png)
+
+### 7. About us
+![Web Screenshot](https://github.com/mtyks/expense_tracker_system/blob/main/expense_tracker/static/images/egAbout.png)
+
+---
+
+## 📦 Installation Guide
+
+### 1. Clone the repository
 ```bash
 git clone https://github.com/mtyks/expense_tracker_system.git
-```
-locate system folder:
-
-```bash
 cd expense_tracker_system
 ```
-
-Install the requirements:
-
+### 2. Create and activate a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+```
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-Make the migrations:
-
-```bash
-python manage.py makemigrations
-```
-
-Apply the migrations:
-
+### 4. Apply database migrations
 ```bash
 python manage.py migrate
 ```
-
-Finally, run the development server:
-
+### 5. Start the development server
 ```bash
 python manage.py runserver
 ```
+### 6. Open in browser
+```bash
+http://127.0.0.1:8000/
+```
+---
 
-The project will be available at **127.0.0.1:8000**.
+🧪 Running Tests
+To run all tests:
+```bash
+python manage.py test
+```
+🧹 Code Linting with Ruff
+Check code quality with:
+```bash
+ruff check .
+```
+Auto-fix issues with:
+```bash
+ruff check . --fix
+```
+
+🤖 GitHub Actions
+This project can integrate with GitHub Actions for automated code checks. You can configure it using .github/workflows/lint.yml.
+
+👤 About the Developer
+Hi, I'm mtyks — a developer interested in building practical web tools using Python and Django. This project is a personal exploration into full-stack development, clean architecture, and scalable design. I'm open to feedback, ideas, or collaboration.
+
+
